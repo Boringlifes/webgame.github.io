@@ -124,12 +124,16 @@
         <a href="#" onclick="showContent('about')">Om Oss</a>
         <a href="#" onclick="showContent('contact')">Kontakt</a>
         <a href="#" onclick="showContent('tetris')">Tetris</a>
-        <a href=" https://discord.gg/mBjgUCTE" target="_blank">Gå med i vår Discord</a>
+        <a href="https://discord.gg/yourdiscordlink" target="_blank">Gå med i vår Discord</a>
     </nav>
     <div class="content" id="content">
         <h2>Hem</h2>
         <p>Detta är startsidan för vår gaming webbsida. Här hittar du allt om våra spel! Oavsett om du är en erfaren spelare eller nybörjare, finns det något för alla. Kom och spela med oss och upptäck nya äventyr!</p>
-         
+        <div class="image-gallery">
+          
+            <img src=" BIld2.jpg" alt="Spelbild 2">
+            <img src=" BIld1.jpg" alt="Spelbild 3">
+        </div>
     </div>
 
     <div class="game-over" id="gameOver">
@@ -352,11 +356,11 @@
         function showContent(section) {
             const contentDiv = document.getElementById('content');
             if (section === 'home') {
-                contentDiv.innerHTML = '<h2>Hem</h2><p>Detta är startsidan för vår gaming webbsida. Här hittar du allt om våra spel! Oavsett om du är en erfaren spelare eller nybörjare, finns det något för alla. Kom och spela med oss och upptäck nya äventyr!</p><div class="image-gallery"><img src="path/to/your/image1.jpg" alt="Spelbild 1"><img src="path/to/your/image2.jpg" alt="Spelbild 2"><img src="path/to/your/image3.jpg" alt="Spelbild 3"></div>';
+                contentDiv.innerHTML = '<h2>Hem</h2><p>Detta är startsidan för vår gaming webbsida. Här hittar du allt om våra spel! Oavsett om du är en erfaren spelare eller nybörjare, finns det något för alla. Kom och spela med oss och upptäck nya äventyr!</p><div class="image-gallery"><img src="BIld2.jpg"  alt=" spelbild 2"><img src="BIld1.jpg" alt="Spelbild 3"></div>';
             } else if (section === 'about') {
                 contentDiv.innerHTML = '<h2>Om Oss</h2><p>Vi är ett team av spelentusiaster som älskar att skapa och spela spel. Vår gemenskap är öppen för alla som vill dela sin passion för gaming!</p>';
             } else if (section === 'contact') {
-                contentDiv.innerHTML = '<h2>Kontakt</h2><p>Kontakta oss via e-post på  bboringkonto@gmail.com</p>';
+                contentDiv.innerHTML = '<h2>Kontakt</h2><p>Kontakta oss via e-post på info@example.com.</p>';
             } else if (section === 'tetris') { // Tetris sektion
                 contentDiv.innerHTML = '<h2>Tetris</h2><div id="tetris"></div>';
                 startGame(); // Starta spelet
